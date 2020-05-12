@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>781283869976-jp45su0uo7n4eser21fa9sq5m2qe211v.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.781283869976-jp45su0uo7n4eser21fa9sq5m2qe211v</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBcecZQfQGmqr943-g3Tuwq66sGp5HnZck</string>
+	<key>GCM_SENDER_ID</key>
+	<string>781283869976</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>co.il.hackeru.ForumApp</string>
+	<key>PROJECT_ID</key>
+	<string>forumapp-ba12a</string>
+	<key>STORAGE_BUCKET</key>
+	<string>forumapp-ba12a.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:781283869976:ios:220e36cefd306bf8d1ca6d</string>
+	<key>DATABASE_URL</key>
+	<string>https://forumapp-ba12a.firebaseio.com</string>
+</dict>
+</plist>
