@@ -33,9 +33,9 @@ class ExpenditudesManager {
     
     func getAllExpendtiudes(with complition: @escaping ([Expenditude]) -> Void) {
         guard let businessName = self.businessName else {
-        return
+            return
         }
-
+        
         expenditudesDatabseReference.child(businessName).observeSingleEvent(of: .value) { (snapshot) in
             guard let json = snapshot.value as? [String:Any] else {
                 complition([])
@@ -43,38 +43,38 @@ class ExpenditudesManager {
             }
             
             let result = Array(json.values).compactMap{ $0 as? [String:Any]}.compactMap{ Expenditude($0) }
-                       complition(result)
+            complition(result)
         }
-
+        
     }
     
     
     
-func crateExpenditudeDetails(with reportId: String, in expenditude: Expenditude) {
-    guard let bName = self.businessName else {
-        return
-    }
-    //crate object
-    let currentExpenditude = ExpenditudeDetails(expenditudeTitle: expenditude.expenditudeTitle, expenditudeSum: "\(expenditude.expenditudeSum)", expenditudeDate: expenditude.expenditudeDate)
-    
-}
-
-func listenToNewRport(in expenditude : Expenditude, with callback : @escaping (Expenditude) -> Void ) -> UInt {
-        
-    let ref = expenditudesDatabseReference.child(expenditude.expenditudeTitle)
-        
-    return ref.observe(.childAdded) { (snapshot) in
-        guard let json = snapshot.value as? [String:Any] else {
+    func crateExpenditudeDetails(with reportId: String, in expenditude: Expenditude) {
+        guard let bName = self.businessName else {
             return
         }
-        
-        guard let expenditude = Expenditude(json) else {
-            return
-        }
-        
-        callback(expenditude)
+        //crate object
+        let currentExpenditude = ExpenditudeDetails(expenditudeTitle: expenditude.expenditudeTitle, expenditudeSum: "\(expenditude.expenditudeSum)", expenditudeDate: expenditude.expenditudeDate)
         
     }
+    
+    func listenToNewRport(in expenditude : Expenditude, with callback : @escaping (Expenditude) -> Void ) -> UInt {
+        
+        let ref = expenditudesDatabseReference.child(expenditude.expenditudeTitle)
+        
+        return ref.observe(.childAdded) { (snapshot) in
+            guard let json = snapshot.value as? [String:Any] else {
+                return
+            }
+            
+            guard let expenditude = Expenditude(json) else {
+                return
+            }
+            
+            callback(expenditude)
+            
+        }
         
     }
 }
