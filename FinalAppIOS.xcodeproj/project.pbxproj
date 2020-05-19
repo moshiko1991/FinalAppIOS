@@ -28,11 +28,11 @@
 		1168EFCF241AEA3C0073E9D0 /* ExpenditudeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1168EFCE241AEA3C0073E9D0 /* ExpenditudeViewController.swift */; };
 		116CCF14240FCE3B0057EA33 /* ReportsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116CCF13240FCE3B0057EA33 /* ReportsViewController.swift */; };
 		116CCF16240FD1D00057EA33 /* bad.plist in Resources */ = {isa = PBXBuildFile; fileRef = 116CCF15240FD1D00057EA33 /* bad.plist */; };
-		116CCF18240FD2430057EA33 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 116CCF17240FD2430057EA33 /* GoogleService-Info.plist */; };
 		116CE28E2423BACC003AB182 /* ExpenditudeDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116CE28D2423BACC003AB182 /* ExpenditudeDetailsViewController.swift */; };
 		116CE2902423BD89003AB182 /* ExpenditudeDetailes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116CE28F2423BD89003AB182 /* ExpenditudeDetailes.swift */; };
 		118795CA240C3E6C00BDD6B7 /* BusinessInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118795C9240C3E6C00BDD6B7 /* BusinessInfo.swift */; };
 		494165877895824DCFF5F783 /* Pods_FinalAppIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 139AA4727C98870F28C14EE9 /* Pods_FinalAppIOS.framework */; };
+		B2F27F402473FDBB0030343C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B2F27F3F2473FDBB0030343C /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,11 +60,11 @@
 		1168EFCE241AEA3C0073E9D0 /* ExpenditudeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenditudeViewController.swift; sourceTree = "<group>"; };
 		116CCF13240FCE3B0057EA33 /* ReportsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportsViewController.swift; sourceTree = "<group>"; };
 		116CCF15240FD1D00057EA33 /* bad.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = bad.plist; sourceTree = "<group>"; };
-		116CCF17240FD2430057EA33 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		116CE28D2423BACC003AB182 /* ExpenditudeDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenditudeDetailsViewController.swift; sourceTree = "<group>"; };
 		116CE28F2423BD89003AB182 /* ExpenditudeDetailes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenditudeDetailes.swift; sourceTree = "<group>"; };
 		118795C9240C3E6C00BDD6B7 /* BusinessInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessInfo.swift; sourceTree = "<group>"; };
 		139AA4727C98870F28C14EE9 /* Pods_FinalAppIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FinalAppIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2F27F3F2473FDBB0030343C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F42EF6B107BACD44FA783F11 /* Pods-FinalAppIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinalAppIOS.release.xcconfig"; path = "Target Support Files/Pods-FinalAppIOS/Pods-FinalAppIOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -114,7 +114,7 @@
 				114BC52C240A9C95002694A4 /* Empty.storyboard */,
 				114BC511240A9A30002694A4 /* Assets.xcassets */,
 				114BC516240A9A31002694A4 /* Info.plist */,
-				116CCF17240FD2430057EA33 /* GoogleService-Info.plist */,
+				B2F27F3F2473FDBB0030343C /* GoogleService-Info.plist */,
 				116CCF15240FD1D00057EA33 /* bad.plist */,
 			);
 			path = FinalAppIOS;
@@ -265,7 +265,7 @@
 				114BC512240A9A30002694A4 /* Assets.xcassets in Resources */,
 				114BC510240A9A30002694A4 /* Main.storyboard in Resources */,
 				116CCF16240FD1D00057EA33 /* bad.plist in Resources */,
-				116CCF18240FD2430057EA33 /* GoogleService-Info.plist in Resources */,
+				B2F27F402473FDBB0030343C /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
